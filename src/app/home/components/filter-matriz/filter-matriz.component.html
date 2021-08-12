@@ -1,0 +1,18 @@
+<div class="container py-5">
+  <div class="card">
+    <img (click)="filterMatriz()"  class="card-img w-25" src="{{img}}" alt="">
+    <div class="card-body">
+      <div class="w-100">
+        <label *ngFor="let item of matrizFilter" class="w-25 form-label border border-dark rounded-1 text-center">
+         <span>
+           {{item}}
+         </span>
+        </label>
+      </div>
+      <div class="input-group">
+        <input #myFilter type="text" class="form-control" placeholder="Digite seu filtro" aria-describedby="basic-addon2">
+        <button (click)="limparFiltro()"  type="button" class="btn btn-danger">Limpar filtro</button>
+      </div>
+    </div>
+  </div>
+</div>

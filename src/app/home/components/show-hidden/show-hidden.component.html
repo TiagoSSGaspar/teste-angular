@@ -1,0 +1,12 @@
+<div class="container">
+  <div class="card text-left">
+    <img [ngClass]="{
+      'visible': !statusDaImg,
+      'invisible': statusDaImg
+      }" class="card-img w-25" src="{{img}}" alt="">
+    <div class="card-body">
+      <label for="bt" class="form-label text-center card-title"> Status da imagem = {{infoStatus}}</label>
+      <button (click)="hiddenOrShow()"  type="button" id="bt" class="btn btn-dark w-100">Clique!</button>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,13 @@
+
+@media (max-width: 990px) {
+  main {
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+main {
+  section {
+    height: 30vh;
+  }
+}
